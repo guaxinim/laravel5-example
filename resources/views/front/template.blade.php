@@ -141,5 +141,9 @@
 
 	@yield('scripts')
 
+    <?php
+    echo $_SERVER['SERVER_ADDR'];
+    ?>
+
   </body>
 </html>
