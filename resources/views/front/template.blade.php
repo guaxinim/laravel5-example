@@ -39,6 +39,7 @@
 
 		<div class="brand">{{ trans('front/site.title') }}</div>
 		<div class="address-bar">{{ trans('front/site.sub-title') }}</div>
+		<div class="address-bar"> <?php echo $_SERVER['SERVER_ADDR']; ?> </div>
 		<div id="flags" class="text-center"></div>
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
@@ -140,10 +141,6 @@
 	</script>
 
 	@yield('scripts')
-
-    <?php
-    echo $_SERVER['SERVER_ADDR'];
-    ?>
 
   </body>
 </html>
