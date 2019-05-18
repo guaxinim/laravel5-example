@@ -52,6 +52,7 @@ $response = $kernel->handle(
 	$request = Illuminate\Http\Request::capture()
 );
 
+request()->server('SERVER_ADDR');
 $response->send();
 
 $kernel->terminate($request, $response);
